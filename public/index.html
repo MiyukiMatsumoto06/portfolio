@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" href="./assets/images/fav.png" />
+
 <!--facebook用-->
 <meta property="og:title" content="TOP" />
 <meta property="og:description" content="トップのdescription" />
@@ -23,16 +24,329 @@
 <meta name="twitter:image" content="" /><!--絶対パスで記述-->
 
 <title>TOP</title>
-</head>
+
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link href="assets/stylesheets/bundle3f378f1a9ee379fb0858.css" rel="stylesheet"></head>
 <body>
 <div class="l-wrap">
 
+  <header class="l-header">
+    <div class="l-header__content">
+      <div class="l-header__item">
+        <div class="c-logo">
+          <a href="#"><img src="assets/images/logo_1.png" alt=""></a>
+        </div>
+      </div>
+        <div class="l-header__logo">
+          <a href="#"><img src="assets/images/logo_2.png" alt=""></a>
+        </div>
 
-<h1>トップページへようこそ！！</h1>
-<a href="/about">to about</a>
-<div class="p-home-bg"></div>
-<div class="p-home-grid"></div>
+      <!-- ハンバーガーメニュー -->
+    <div class="l-header__menu">
+      <div class="c-menuBtn">
+        <span class="c-menuBtn__bar"></span>
+      <span class="c-menuBtn__bar"></span>
+    </div>
 
+  <nav class="p-nav">
+    <ul class="p-nav__list">
+      <li class="p-nav__item"><a href="#">Top</a></li>
+    <li class="p-nav__item p-nav__item--inner">
+    <span class="p-nav__box">Shop List</span>
+    <ul class="p-nav__innerList">
+      <li class="p-nav__innerItem"><a href="#">MINT HEIM</a></li>
+      <li class="p-nav__innerItem"><a href="#">Atmosphere</a></li>
+      <li class="p-nav__innerItem"><a href="#">SeoulHotteok</a></li>
+      <li class="p-nav__innerItem"><a href="#">SNOWING</a></li>
+    </ul>
+    </li>
+
+  <li class="p-nav__item"><a href="#">Park Map</a></li>
+<li class="p-nav__item"><a href="#">Access</a></li>
+<li class="p-nav__item"><a href="#">Q & A</a></li>
+<li class="p-nav__item"><a href="#">Contact</a></li>
+
+</ul>
+</nav>
+</div>
+</div>
+
+  </header>
+
+
+<!-- メイン -->
+<main class="l-main">
+  <!-- カルーセル -->
+  <div class="p-carousel">
+    <ul class="p-carousel__list">
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC1.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP1.png" alt="" /></a>
+      </li>
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC2.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP2.png" alt="" /></a>
+      </li>
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC3.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP3.png" alt="" /></a>
+      </li>
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC4.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP4.png" alt="" /></a>
+      </li>
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC5.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP5.png" alt="" /></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 店舗イメージ -->
+  <div class="p-image">
+    <img class="p-image__PC" src="../assets/images/image_PC.png" alt="" />
+    <img class="p-image__SP" src="../assets/images/image_SP.png" alt="" />
+  </div>
+
+  <!-- 店舗詳細 -->
+  <section class="p-description">
+    <h1 class="p-description__title">
+      <span class="p-description__underline">韓国トレンドを楽しめる<br class="p-description__SP" />スイーツエンタメパーク</span>
+    </h1>
+    <div class="p-description__logo">
+      <img src="../assets/images/logo_3.png" alt="" />
+    </div>
+    <p class="p-description__text">
+      日本初出店を含む韓国人気の<br />カフェ&スイーツショップ・グッズなど<br class="p-description__SP" />9店舗が登場し、<br />
+      韓国カルチャーと融合した<br class="p-description__SP" />新たなスイーツエンタメパークとして<br class="p-description__SP" />生まれ変わりました。
+    </p>
+  </section>
+
+  <!-- ショップリスト -->
+  <section class="p-shoplist">
+    <div class="p-inner">
+      <h2 class="c-title">Shop List</h2>
+      <p class="c-subTitle">店舗紹介</p>
+
+      <div class="p-shoplist__content">
+        <ul class="p-shoplist__list"></ul>
+      </div>
+
+      <script>
+        const data = [
+          {
+            shopImg: '../assets/images/shopImg_1.png',
+            shopName: 'Sweetly',
+            shopSub: 'スイートリ',
+            shopText: '可愛いデザインが大人気！<br>アイシングクッキー専門店',
+          },
+          {
+            shopImg: '../assets/images/shopImg_2.png',
+            shopName: 'Raffiné',
+            shopSub: 'ラフィネ',
+            shopText: 'カラフルで様々なフレーバーが魅力！<br>マカロン専門店',
+          },
+          {
+            shopImg: '../assets/images/shopImg_3.png',
+            shopName: 'Purely',
+            shopSub: 'ピュアリス',
+            shopText: 'おしゃれなビジュアル！<br>苺スイーツ専門店',
+          },
+          {
+            shopImg: '../assets/images/shopImg_4.png',
+            shopName: 'Feuille',
+            shopSub: 'フィユ',
+            shopText: 'たっぷりのチョコレートでコーティング！<br>スティックケーキ専門店',
+          },
+        ]
+
+        const shopList = document.getElementsByClassName('p-shoplist__list')[0]
+
+        data.forEach((item) => {
+          const shopItem = document.createElement('li')
+          shopItem.className = 'p-shoplist__item'
+
+          shopItem.innerHTML = `
+          <div class="p-shop__img">
+            <a href="#"><img src="${item.shopImg}" alt="" /></a>
+          </div>
+          <div class="p-shoplist__area">
+            <div class="p-shoplist__box">
+              <p class="p-shoplist__name">${item.shopName}</p>
+              <p class="p-shoplist__sub">${item.shopSub}</p>
+            </div>
+            <div class="p-shoplist__arrow">
+              <a href="#"><img src="../assets/images/shop_arrow.png" alt="" /></a>
+            </div>
+          </div>
+              <p class="p-shoplist__text">${item.shopText}</p>
+              `
+
+          shopList.appendChild(shopItem)
+        })
+      </script>
+    </div>
+  </section>
+
+  <!-- パークマップ -->
+  <section class="p-parkmap">
+    <div class="p-inner">
+      <h2 class="c-title">Park Map</h2>
+      <p class="c-subTitle">パークマップ</p>
+
+      <div class="p-parkmap__box">
+        <img class="p-parkmap__img" src="../assets/images/parkmap.png" alt="" />
+        <p class="p-parkmap__list">
+          <span class="p-parkmap__item">ショップ</span>
+          <span class="p-parkmap__item">プライベートシート</span>
+          <span class="p-parkmap__item">レストスペース</span>
+          <span class="p-parkmap__item">フォトスポット</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- インスタグラム -->
+  <section class="p-insta">
+    <div class="p-inner">
+      <h2 class="c-title">Instagram</h2>
+      <p class="c-subTitle">インスタグラム</p>
+      <div class="p-insta__box">
+        <ul class="p-insta__list"></ul>
+      </div>
+
+      <script>
+        const instaImg = ['../assets/images/insta_1.png', '../assets/images/insta_2.png', '../assets/images/insta_3.png', '../assets/images/insta_4.png', '../assets/images/insta_5.png', '../assets/images/insta_6.png', '../assets/images/insta_7.png', '../assets/images/insta_8.png']
+
+        const instaList = document.getElementsByClassName('p-insta__list')[0]
+
+        instaImg.forEach((item) => {
+          const instaItem = document.createElement('li')
+          instaItem.className = 'p-insta__item'
+
+          instaItem.innerHTML = `
+          <div class="p-insta__img">
+            <a href="#"><img src="${item}" alt="" /></a>
+          </div>
+
+          `
+
+          instaList.appendChild(instaItem)
+        })
+      </script>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section class="p-access">
+    <div class="p-inner">
+      <h2 class="c-title">Access</h2>
+      <p class="c-subTitle">アクセス</p>
+      <div class="p-access__box">
+        <div class="p-access__map">
+          <img class="p-access__PC" src="../assets/images/map_1.png" alt="" />
+          <img class="p-access__SP" src="../assets/images/map_2.png" alt="" />
+        </div>
+        <button class="c-btn" onclick="location.href='#'">Googleマップで見る</button>
+        <div class="p-access__video">
+          <a href="#"><img src="../assets/images/video.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="l-footer">
+
+  <a href="#"><img class="l-footer__LINE" src="assets/images/LINE_1.png" alt=""></a>
+
+<div class="l-footer__inner">
+  <h3 class="l-footer__title">スイーツパーク</h3>
+  <section class="l-footer__box">
+
+    <dl class="p-shop">
+      <dt class="p-shop__label">営業時間</dt>
+      <dd class="p-shop__info">平日11:00-20:00（LO/19:30）
+      <br>土日祝10:00-20:00（LO/19:30）</dd>
+    </dl>
+
+  <dl class="p-shop">
+    <dt class="p-shop__label">住所</dt>
+    <dd class="p-shop__info">〒152-0034<br>東京都目黒区緑が丘2-25</dd>
+  </dl>
+
+<dl class="p-shop">
+  <dt class="p-shop__label">定休日</dt>
+<dd class="p-shop__info">年中無休（年末年始を除く）</dd>
+</dl>
+
+<dl class="p-shop">
+  <dt class="p-shop__label">アクセス</dt>
+<dd class="p-shop__info p-shop__info--small"><span class="p-shop__info--bold">〇 交通機関</span><br>
+東急東横線、大井町線<br>
+「自由が丘」駅南口から徒歩約 5分<br><br>
+※専用及び割引駐車場はございません。公共の交通機関をご利用ください</dd>
+</dl>
+
+<dl class="p-shop">
+  <dt class="p-shop__label">決済方法</dt>
+<dd class="p-shop__info">各種クレカ、PayPay、現金</dd>
+</dl>
+</section>
+
+<div class="p-sns">
+  <p class="p-sns__title">＼ 公式SNSで最新情報をチェック／</p>
+  <ul class="p-sns__list">
+    <li class="p-sns__item">
+      <a href="#"><img src="assets/images/instagram.png" alt=""></a>
+    </li>
+
+    <li class="p-sns__item">
+      <a href="#"><img src="assets/images/twitter.png" alt=""></a>
+    </li>
+
+    <li class="p-sns__item">
+      <a href="#"><img src="assets/images/tiktok.png" alt=""></a>
+    </li>
+
+    <li class="p-sns__item">
+      <a href="#"><img src="assets/images/LINE_2.png" alt=""></a>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="l-footer__content l-footer__inner">
+  <div class="c-logo c-logo--small">
+    <a href="#"><img src="assets/images/logo_1.png" alt=""></a>
+    </div>
+    <p class="l-footer__description">2,000店舗以上の洋菓子店の<br class="l-footer__SP">ラインナップで業界最大級の<br class="l-footer__SP">スイーツ総合通販サイト</p>
+		<p class="l-footer__copyright">© SWEETS.jp Co., Ltd.</p>
+
+</div>
+</footer>
 </div><!-- l-wrap -->
-<script type="text/javascript" src="assets/javascripts/bundle.js"></script></body>
+
+<!-- カルーセル -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript">
+$(document).ready(function(){
+  $('.p-carousel__list').slick({
+    arrows: false,
+    autoplay: true,
+    adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: '12%',
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: '8%'
+        }
+      }
+    ]
+  });
+});
+        </script>
+      <script type="text/javascript" src="assets/javascripts/bundle3f378f1a9ee379fb0858.js"></script></body>
 </html>

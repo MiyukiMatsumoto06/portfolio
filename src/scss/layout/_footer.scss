@@ -1,3 +1,103 @@
-.footer {
-	color: #fff;
+.l-footer {
+  margin-top: 12rem;
+
+  &__LINE {
+    position: fixed;
+    left: 86px;
+    bottom: 60px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    z-index: 100;
+  }
+
+  &__inner {
+    position: relative;
+    max-width: 1280px;
+    width: 66%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 1.9rem;
+    line-height: 1.9;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    max-width: 92%;
+    margin: 4.5rem auto;
+    justify-content: space-between;
+  }
+
+  &__description {
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  &__SP {
+    display: none;
+  }
+
+  &__copyright {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .l-footer {
+    &__inner {
+      max-width: none;
+      width: auto;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    &__title {
+      font-size: 2.1rem;
+    }
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .l-footer {
+    margin-top: 8.6rem;
+
+    &__LINE {
+      bottom: 30px;
+      left: 20px;
+      height: 68px;
+      width: 68px;
+    }
+
+    &__content {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 4.5rem auto 2.4rem;
+    }
+
+    &__description {
+      margin: 2.7rem 0 2.5rem;
+      text-align: center;
+    }
+
+    &__SP {
+      display: block;
+    }
+
+    &__copyright {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
 }

@@ -1,0 +1,50 @@
+.p-insta {
+  margin-top: 27rem;
+
+  &__box {
+    text-align: center;
+    margin: 7rem auto 0;
+    padding-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  &__item {
+    width: calc(25% - 10px);
+    margin-bottom: 10px;
+  }
+
+  &__img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-insta {
+    margin-top: 10rem;
+
+    &__box {
+      margin-top: 4rem;
+    }
+
+    &__list {
+      width: 100%;
+    }
+
+    &__item {
+      width: calc(50%);
+      margin: 0;
+      padding: 5px;
+    }
+  }
+}

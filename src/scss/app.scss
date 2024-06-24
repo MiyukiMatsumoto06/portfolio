@@ -12,6 +12,8 @@
 // Layout
 // ==========================================================================*/
 
+@use 'layout/header';
+@use 'layout/main';
 @use 'layout/_footer';
 
 /*// ==========================================================================
@@ -22,14 +24,28 @@
 // Component
 // -----------------------------------------------------------------*/
 
+@use 'object/component/_logo';
+@use 'object/component/_menuBtn';
+@use 'object/component/_title';
+@use 'object/component/_subTitle';
 @use 'object/component/_btn';
-
 
 /*// -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------*/
 
-@use 'object/project/_home';
+@use 'object/project/_nav';
+@use 'object/project/_carousel';
+@use 'object/project/_image';
+@use 'object/project/_description';
+@use 'object/project/_shoplist';
+@use 'object/project/_inner';
+@use 'object/project/_parkmap';
+@use 'object/project/_insta';
+@use 'object/project/_access';
+@use 'object/project/_shop';
+@use 'object/project/_sns';
+@use 'object/project/_jquery';
 
 /*// -----------------------------------------------------------------
 // Utility

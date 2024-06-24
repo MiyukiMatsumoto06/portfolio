@@ -1,0 +1,93 @@
+.p-shoplist {
+  margin-top: 27rem;
+  padding: 1px 0 25rem;
+  background-color: #fffcf0;
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 4.4%;
+  }
+
+  &__item {
+    width: 30.4%;
+    margin-top: 18.5rem;
+  }
+
+  &__area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 5.5rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 5px dotted #fcb9b6;
+  }
+
+  &__name {
+    flex: 1;
+    color: #fcb9b6;
+    font-family: 'AzoSans-Bold', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.4rem, 2vw, 3.6rem);
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    word-break: break-all;
+  }
+
+  &__sub {
+    display: block;
+    margin-top: 0.7rem;
+    color: #505050;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  &__arrow {
+    display: block;
+    width: 8rem;
+  }
+
+  &__text {
+    margin-top: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.44;
+    letter-spacing: 0.025em;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-shoplist {
+    margin-top: 10rem;
+    padding: 1px 0 9rem;
+
+    &__item {
+      width: 100%;
+      margin-top: 8rem;
+    }
+
+    &__area {
+      border-bottom: 3px dotted #fcb9b6;
+    }
+
+    &__name {
+      font-size: 2.9rem;
+    }
+
+    &__sub {
+      font-size: 1.2rem;
+    }
+
+    &__arrow {
+      width: 5.5rem;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+    }
+  }
+}

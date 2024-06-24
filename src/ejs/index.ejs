@@ -1,8 +1,180 @@
-<% var title = "TOP"; var description = "トップのdescription"; %> <% include
-src/ejs/template/_head %>
+<% var title = "TOP"; var description = "トップのdescription"; %> <% include src/ejs/template/_head %>
 
-<h1>トップページへようこそ！！</h1>
-<a href="/about">to about</a>
-<div class="p-home-bg"></div>
-<div class="p-home-grid"></div>
+<!-- メイン -->
+<main class="l-main">
+  <!-- カルーセル -->
+  <div class="p-carousel">
+    <ul class="p-carousel__list">
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC1.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP1.png" alt="" /></a>
+      </li>
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC2.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP2.png" alt="" /></a>
+      </li>
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC3.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP3.png" alt="" /></a>
+      </li>
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC4.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP4.png" alt="" /></a>
+      </li>
+      <li class="p-carousel__item">
+        <a href="#"><img class="p-carousel__PC" src="../assets/images/carousel_PC5.png" alt="" /> <img class="p-carousel__SP" src="../assets/images/carousel_SP5.png" alt="" /></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 店舗イメージ -->
+  <div class="p-image">
+    <img class="p-image__PC" src="../assets/images/image_PC.png" alt="" />
+    <img class="p-image__SP" src="../assets/images/image_SP.png" alt="" />
+  </div>
+
+  <!-- 店舗詳細 -->
+  <section class="p-description">
+    <h1 class="p-description__title">
+      <span class="p-description__underline">韓国トレンドを楽しめる<br class="p-description__SP" />スイーツエンタメパーク</span>
+    </h1>
+    <div class="p-description__logo">
+      <img src="../assets/images/logo_3.png" alt="" />
+    </div>
+    <p class="p-description__text">
+      日本初出店を含む韓国人気の<br />カフェ&スイーツショップ・グッズなど<br class="p-description__SP" />9店舗が登場し、<br />
+      韓国カルチャーと融合した<br class="p-description__SP" />新たなスイーツエンタメパークとして<br class="p-description__SP" />生まれ変わりました。
+    </p>
+  </section>
+
+  <!-- ショップリスト -->
+  <section class="p-shoplist">
+    <div class="p-inner">
+      <h2 class="c-title">Shop List</h2>
+      <p class="c-subTitle">店舗紹介</p>
+
+      <div class="p-shoplist__content">
+        <ul class="p-shoplist__list"></ul>
+      </div>
+
+      <script>
+        const data = [
+          {
+            shopImg: '../assets/images/shopImg_1.png',
+            shopName: 'Sweetly',
+            shopSub: 'スイートリ',
+            shopText: '可愛いデザインが大人気！<br>アイシングクッキー専門店',
+          },
+          {
+            shopImg: '../assets/images/shopImg_2.png',
+            shopName: 'Raffiné',
+            shopSub: 'ラフィネ',
+            shopText: 'カラフルで様々なフレーバーが魅力！<br>マカロン専門店',
+          },
+          {
+            shopImg: '../assets/images/shopImg_3.png',
+            shopName: 'Purely',
+            shopSub: 'ピュアリス',
+            shopText: 'おしゃれなビジュアル！<br>苺スイーツ専門店',
+          },
+          {
+            shopImg: '../assets/images/shopImg_4.png',
+            shopName: 'Feuille',
+            shopSub: 'フィユ',
+            shopText: 'たっぷりのチョコレートでコーティング！<br>スティックケーキ専門店',
+          },
+        ]
+
+        const shopList = document.getElementsByClassName('p-shoplist__list')[0]
+
+        data.forEach((item) => {
+          const shopItem = document.createElement('li')
+          shopItem.className = 'p-shoplist__item'
+
+          shopItem.innerHTML = `
+          <div class="p-shop__img">
+            <a href="#"><img src="${item.shopImg}" alt="" /></a>
+          </div>
+          <div class="p-shoplist__area">
+            <div class="p-shoplist__box">
+              <p class="p-shoplist__name">${item.shopName}</p>
+              <p class="p-shoplist__sub">${item.shopSub}</p>
+            </div>
+            <div class="p-shoplist__arrow">
+              <a href="#"><img src="../assets/images/shop_arrow.png" alt="" /></a>
+            </div>
+          </div>
+              <p class="p-shoplist__text">${item.shopText}</p>
+              `
+
+          shopList.appendChild(shopItem)
+        })
+      </script>
+    </div>
+  </section>
+
+  <!-- パークマップ -->
+  <section class="p-parkmap">
+    <div class="p-inner">
+      <h2 class="c-title">Park Map</h2>
+      <p class="c-subTitle">パークマップ</p>
+
+      <div class="p-parkmap__box">
+        <img class="p-parkmap__img" src="../assets/images/parkmap.png" alt="" />
+        <p class="p-parkmap__list">
+          <span class="p-parkmap__item">ショップ</span>
+          <span class="p-parkmap__item">プライベートシート</span>
+          <span class="p-parkmap__item">レストスペース</span>
+          <span class="p-parkmap__item">フォトスポット</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- インスタグラム -->
+  <section class="p-insta">
+    <div class="p-inner">
+      <h2 class="c-title">Instagram</h2>
+      <p class="c-subTitle">インスタグラム</p>
+      <div class="p-insta__box">
+        <ul class="p-insta__list"></ul>
+      </div>
+
+      <script>
+        const instaImg = ['../assets/images/insta_1.png', '../assets/images/insta_2.png', '../assets/images/insta_3.png', '../assets/images/insta_4.png', '../assets/images/insta_5.png', '../assets/images/insta_6.png', '../assets/images/insta_7.png', '../assets/images/insta_8.png']
+
+        const instaList = document.getElementsByClassName('p-insta__list')[0]
+
+        instaImg.forEach((item) => {
+          const instaItem = document.createElement('li')
+          instaItem.className = 'p-insta__item'
+
+          instaItem.innerHTML = `
+          <div class="p-insta__img">
+            <a href="#"><img src="${item}" alt="" /></a>
+          </div>
+
+          `
+
+          instaList.appendChild(instaItem)
+        })
+      </script>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section class="p-access">
+    <div class="p-inner">
+      <h2 class="c-title">Access</h2>
+      <p class="c-subTitle">アクセス</p>
+      <div class="p-access__box">
+        <div class="p-access__map">
+          <img class="p-access__PC" src="../assets/images/map_1.png" alt="" />
+          <img class="p-access__SP" src="../assets/images/map_2.png" alt="" />
+        </div>
+        <button class="c-btn" onclick="location.href='#'">Googleマップで見る</button>
+        <div class="p-access__video">
+          <a href="#"><img src="../assets/images/video.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
 <% include src/ejs/template/_footer %>

@@ -4,6 +4,36 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: min(2.66vw, 10px);
+  }
+}
+
+body {
+  color: #505050;
+}
+
+a {
+  transition: all 0.3s;
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 94px;
+  }
+}
+
 img {
   width: 100%;
   vertical-align: middle;

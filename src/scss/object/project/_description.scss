@@ -1,0 +1,58 @@
+.p-description {
+  text-align: center;
+  margin: 12rem auto 0;
+  padding: 7rem 2rem;
+  max-width: 1280px;
+  width: 66%;
+  letter-spacing: 0.05em;
+  border: 5px dotted #fcb9b6;
+
+  &__title {
+    font-size: clamp(2.5rem, 2.5vw, 3rem);
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+
+  &__underline {
+    background: linear-gradient(180deg, transparent 65%, #fcb9b6 35%);
+  }
+
+  &__SP {
+    display: none;
+  }
+
+  &__logo img {
+    width: 30rem;
+    margin: 5rem auto 4rem;
+  }
+
+  &__text {
+    font-size: clamp(1.4rem, 1.4vw, 1.8rem);
+    line-height: 2.2;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-description {
+    max-width: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    border: 3px dotted #fcb9b6;
+
+    &__title {
+      font-size: 1.6rem;
+    }
+
+    &__SP {
+      display: block;
+    }
+
+    &__logo img {
+      width: 20rem;
+      margin: 3rem auto 2.7rem;
+    }
+  }
+}

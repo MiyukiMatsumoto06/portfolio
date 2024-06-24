@@ -1,0 +1,57 @@
+.p-shop {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem 0;
+  border-top: 4px dotted #fcb9b6;
+
+  &__label {
+    width: 18rem;
+    font-size: 1.5rem;
+    font-weight: 550;
+  }
+
+  &__info {
+    flex: 1;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+  }
+}
+
+.p-shop:last-child {
+  border-bottom: 4px dotted #fcb9b6;
+}
+
+.p-shop__info--bold {
+  font-weight: bold;
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-shop {
+    flex-wrap: nowrap;
+    padding: 1.5rem 0 !important;
+    border-top: 3px dotted #fcb9b6;
+
+    &__label {
+      width: 8.5rem;
+    }
+
+    &__info {
+      font-size: 1.4rem;
+    }
+
+    &__info--small {
+      font-size: 1.2rem;
+      letter-spacing: 0.03em;
+    }
+
+    &__info--bold {
+      font-size: 1.4rem;
+    }
+  }
+
+  .p-shop:last-child {
+    border-bottom: 3px dotted #fcb9b6;
+  }
+}

@@ -1,0 +1,16 @@
+.p-inner {
+  position: relative;
+  max-width: 1580px;
+  width: 82%;
+  margin: 0 auto;
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-inner {
+    max-width: none;
+    width: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

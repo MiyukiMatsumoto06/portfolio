@@ -1,0 +1,42 @@
+.p-sns {
+  margin: 12.6rem 0 14rem;
+  text-align: center;
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__item img {
+    width: 40px;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-sns {
+    margin: 6rem 0 5.6rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #707070;
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__list {
+      margin-top: 1.4rem;
+      gap: 0.8rem;
+    }
+
+    &__item img {
+      width: 31px;
+    }
+  }
+}

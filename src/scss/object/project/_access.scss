@@ -1,0 +1,50 @@
+.p-access {
+  margin-top: 27rem;
+
+  &__box {
+    width: 80%;
+    margin: 7rem auto 0;
+  }
+
+  &__map {
+    mb: 8rem;
+  }
+
+  &__PC {
+    display: block;
+  }
+
+  &__SP {
+    display: none;
+  }
+
+  &__video {
+    margin: 60px auto;
+    text-align: center;
+  }
+
+  &__video img {
+    max-width: 700px;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-access {
+    margin-top: 10rem;
+
+    &__box {
+      max-width: none;
+      width: auto;
+      margin-top: 4rem;
+    }
+
+    &__PC {
+      display: none;
+    }
+
+    &__SP {
+      display: block;
+    }
+  }
+}

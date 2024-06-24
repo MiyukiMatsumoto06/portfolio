@@ -1,0 +1,67 @@
+.p-carousel {
+  margin-top: 3em;
+
+  &__item {
+    width: 1273.8px;
+    margin: 0 60px;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  &__PC {
+    display: block !important;
+  }
+
+  &__SP {
+    display: none !important;
+  }
+}
+
+.slick-dots {
+  text-align: center;
+  bottom: -87px;
+}
+
+.slick-dots li {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid #707070;
+  background-color: #fff;
+  margin: 0 5px;
+}
+
+.slick-dots li.slick-active {
+  background-color: #707070;
+}
+
+.slick-dots li button:before {
+  content: '';
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-carousel {
+    &__item {
+      margin: 0 5px;
+    }
+
+    &__PC {
+      display: none !important;
+    }
+
+    &__SP {
+      display: block !important;
+    }
+  }
+
+  .slick-dots li button:before {
+    font-size: 3px !important;
+  }
+
+  .slick-dots {
+    bottom: -60px;
+  }
+}

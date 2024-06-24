@@ -1,0 +1,14 @@
+.c-title {
+  margin-top: -2.5rem;
+  font-family: 'AzoSans-Bold', sans-serif;
+  font-size: 5.5rem;
+  line-height: 1;
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .c-title {
+    margin-top: -1.5rem;
+    font-size: 2.9rem;
+  }
+}

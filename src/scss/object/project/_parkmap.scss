@@ -1,0 +1,94 @@
+.p-parkmap {
+  &__box {
+    position: relative;
+    width: 80%;
+    margin: 7.5rem auto 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__img {
+    max-width: 80%;
+    margin-right: 0;
+  }
+
+  &__list {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: clamp(1.6rem, 1.8vw, 3.3rem);
+    line-height: 2.78;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    &::before {
+      display: block;
+      flex-shrink: 0;
+      width: min(3vw, 6.2rem);
+      height: min(3vw, 6.2rem);
+      content: '';
+      border-radius: 100%;
+    }
+
+    &:nth-child(1):before {
+      background-color: #fcb9b6;
+    }
+
+    &:nth-child(2):before {
+      background-color: #aadb87;
+    }
+
+    &:nth-child(3):before {
+      background-color: #95dcf0;
+    }
+
+    &:nth-child(4):before {
+      background-color: #f7f38c;
+    }
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-parkmap {
+    &__box {
+      flex-wrap: wrap;
+      width: auto;
+      margin-top: 5rem;
+    }
+
+    &__img {
+      max-width: 100%;
+      margin-right: auto;
+    }
+
+    &__list {
+      position: relative;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      margin-top: 3.5rem;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      gap: 1rem;
+      width: 47%;
+      white-space: nowrap;
+
+      &::before {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+    }
+  }
+}

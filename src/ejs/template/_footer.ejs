@@ -1,3 +1,96 @@
+<footer class="l-footer">
+
+  <a href="#"><img class="l-footer__LINE" src="assets/images/LINE_1.png" alt=""></a>
+
+<div class="l-footer__inner">
+  <h3 class="l-footer__title">スイーツパーク</h3>
+  <section class="l-footer__box">
+
+    <dl class="p-shop">
+      <dt class="p-shop__label">営業時間</dt>
+      <dd class="p-shop__info">平日11:00-20:00（LO/19:30）
+      <br>土日祝10:00-20:00（LO/19:30）</dd>
+    </dl>
+
+  <dl class="p-shop">
+    <dt class="p-shop__label">住所</dt>
+    <dd class="p-shop__info">〒152-0034<br>東京都目黒区緑が丘2-25</dd>
+  </dl>
+
+<dl class="p-shop">
+  <dt class="p-shop__label">定休日</dt>
+<dd class="p-shop__info">年中無休（年末年始を除く）</dd>
+</dl>
+
+<dl class="p-shop">
+  <dt class="p-shop__label">アクセス</dt>
+<dd class="p-shop__info p-shop__info--small"><span class="p-shop__info--bold">〇 交通機関</span><br>
+東急東横線、大井町線<br>
+「自由が丘」駅南口から徒歩約 5分<br><br>
+※専用及び割引駐車場はございません。公共の交通機関をご利用ください</dd>
+</dl>
+
+<dl class="p-shop">
+  <dt class="p-shop__label">決済方法</dt>
+<dd class="p-shop__info">各種クレカ、PayPay、現金</dd>
+</dl>
+</section>
+
+<div class="p-sns">
+  <p class="p-sns__title">＼ 公式SNSで最新情報をチェック／</p>
+  <ul class="p-sns__list">
+    <li class="p-sns__item">
+      <a href="#"><img src="assets/images/instagram.png" alt=""></a>
+    </li>
+
+    <li class="p-sns__item">
+      <a href="#"><img src="assets/images/twitter.png" alt=""></a>
+    </li>
+
+    <li class="p-sns__item">
+      <a href="#"><img src="assets/images/tiktok.png" alt=""></a>
+    </li>
+
+    <li class="p-sns__item">
+      <a href="#"><img src="assets/images/LINE_2.png" alt=""></a>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="l-footer__content l-footer__inner">
+  <div class="c-logo c-logo--small">
+    <a href="#"><img src="assets/images/logo_1.png" alt=""></a>
+    </div>
+    <p class="l-footer__description">2,000店舗以上の洋菓子店の<br class="l-footer__SP">ラインナップで業界最大級の<br class="l-footer__SP">スイーツ総合通販サイト</p>
+		<p class="l-footer__copyright">© SWEETS.jp Co., Ltd.</p>
+
+</div>
+</footer>
 </div><!-- l-wrap -->
-</body>
+
+<!-- カルーセル -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript">
+$(document).ready(function(){
+  $('.p-carousel__list').slick({
+    arrows: false,
+    autoplay: true,
+    adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: '12%',
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: '8%'
+        }
+      }
+    ]
+  });
+});
+        </script>
+      </body>
 </html>

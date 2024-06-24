@@ -1,0 +1,35 @@
+.c-subTitle {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 2.55;
+  letter-spacing: 0.1em;
+  color: #fcb9b6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 8rem;
+    border-bottom: 5px dotted #fcb9b6;
+    height: 5px;
+    margin-left: 0.5rem;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .c-subTitle {
+    font-size: 1.4rem;
+    gap: 0.5rem;
+
+    &::before {
+      width: 3.5rem;
+      border-bottom: 3px dotted #fcb9b6;
+      height: 3px;
+      margin-top: -1.5px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.c-logo img {
+  width: 10.5rem;
+}
+
+.c-logo--small img {
+  width: 12.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .c-logo img {
+    max-width: 6.9rem;
+  }
+
+  .c-logo--small img {
+    max-width: 12rem;
+  }
+}

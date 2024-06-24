@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" href="./assets/images/fav.png" />
+
 <!--facebook用-->
 <meta property="og:title" content="<%= title %>" />
 <meta property="og:description" content="<%= description %>" />
@@ -23,6 +24,54 @@
 <meta name="twitter:image" content="" /><!--絶対パスで記述-->
 
 <title><%= title %></title>
+
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
 <div class="l-wrap">
+
+  <header class="l-header">
+    <div class="l-header__content">
+      <div class="l-header__item">
+        <div class="c-logo">
+          <a href="#"><img src="assets/images/logo_1.png" alt=""></a>
+        </div>
+      </div>
+        <div class="l-header__logo">
+          <a href="#"><img src="assets/images/logo_2.png" alt=""></a>
+        </div>
+
+      <!-- ハンバーガーメニュー -->
+    <div class="l-header__menu">
+      <div class="c-menuBtn">
+        <span class="c-menuBtn__bar"></span>
+      <span class="c-menuBtn__bar"></span>
+    </div>
+
+  <nav class="p-nav">
+    <ul class="p-nav__list">
+      <li class="p-nav__item"><a href="#">Top</a></li>
+    <li class="p-nav__item p-nav__item--inner">
+    <span class="p-nav__box">Shop List</span>
+    <ul class="p-nav__innerList">
+      <li class="p-nav__innerItem"><a href="#">MINT HEIM</a></li>
+      <li class="p-nav__innerItem"><a href="#">Atmosphere</a></li>
+      <li class="p-nav__innerItem"><a href="#">SeoulHotteok</a></li>
+      <li class="p-nav__innerItem"><a href="#">SNOWING</a></li>
+    </ul>
+    </li>
+
+  <li class="p-nav__item"><a href="#">Park Map</a></li>
+<li class="p-nav__item"><a href="#">Access</a></li>
+<li class="p-nav__item"><a href="#">Q & A</a></li>
+<li class="p-nav__item"><a href="#">Contact</a></li>
+
+</ul>
+</nav>
+</div>
+</div>
+
+  </header>
