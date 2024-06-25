@@ -4,6 +4,19 @@
 //   src: url("../fonts/AbhayaLibre-Regular.woff");
 // }
 
+// body {
+//   font-family: 'Noto Sans JP', sans-serif;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+@font-face {
+  font-family: 'AzoSans-Bold';
+  src: url('../fonts/azo-sans-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'AzoSans-Bold', 'Noto Sans JP', sans-serif;
 }

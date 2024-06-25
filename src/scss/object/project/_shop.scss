@@ -8,13 +8,14 @@
   &__label {
     width: 18rem;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: 0.05em;
   }
 
   &__info {
     flex: 1;
     font-size: 1.5rem;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.05em;
   }
 }
 
