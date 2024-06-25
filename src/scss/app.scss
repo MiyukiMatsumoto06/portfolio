@@ -7,6 +7,7 @@
 @use 'foundation/_var';
 @use 'foundation/_font';
 @use 'foundation/_animation';
+@use 'foundation/_jquery';
 
 /*// ==========================================================================
 // Layout
@@ -45,7 +46,6 @@
 @use 'object/project/_access';
 @use 'object/project/_shop';
 @use 'object/project/_sns';
-@use 'object/project/_jquery';
 
 /*// -----------------------------------------------------------------
 // Utility

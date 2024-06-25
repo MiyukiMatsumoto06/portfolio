@@ -52,6 +52,15 @@
 // SP表示　768px以下
 @media screen and (max-width: 768px) {
   .l-footer {
+    margin-top: 8.6rem;
+
+    &__LINE {
+      bottom: 30px;
+      left: 20px;
+      height: 68px;
+      width: 68px;
+    }
+
     &__inner {
       max-width: none;
       width: auto;
@@ -61,20 +70,6 @@
 
     &__title {
       font-size: 2.1rem;
-    }
-  }
-}
-
-// SP表示　768px以下
-@media screen and (max-width: 768px) {
-  .l-footer {
-    margin-top: 8.6rem;
-
-    &__LINE {
-      bottom: 30px;
-      left: 20px;
-      height: 68px;
-      width: 68px;
     }
 
     &__content {
