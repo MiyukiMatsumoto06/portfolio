@@ -1,5 +1,5 @@
 .p-image {
-  margin: 230px auto 0;
+  margin: 24rem auto 0;
   position: relative;
   max-width: 1280px;
   width: 66%;
@@ -16,7 +16,7 @@
 // SP表示　768px以下
 @media screen and (max-width: 768px) {
   .p-image {
-    margin-top: 95px;
+    margin-top: 11.5rem;
     width: 100%;
 
     &__PC {

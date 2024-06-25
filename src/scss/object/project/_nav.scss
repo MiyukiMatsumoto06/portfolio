@@ -1,12 +1,11 @@
 .p-nav {
   display: none;
   position: fixed;
-  z-index: 9999;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 99;
+  z-index: 1;
   width: 46.8rem;
   max-width: 100%;
   height: 100vh;
@@ -17,8 +16,7 @@
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
-  // opacity: 0;
-  transition: left 0.4s;
+  transition: all 0.4s;
 
   &__list {
     height: 100%;
@@ -92,7 +90,6 @@
 
 .p-nav.is-active {
   display: block;
-  // opacity: 1;
   pointer-events: auto;
 }
 
@@ -108,6 +105,38 @@
 
     &__list {
       padding: 0 8%;
+    }
+
+    &__logo {
+      margin: 2.5rem 0;
+      text-align: center;
+    }
+
+    &__logo img {
+      width: 13.5rem;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 1.4rem;
+    }
+
+    &__sns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      gap: 1rem;
+    }
+
+    &__content {
+      width: 40px;
+    }
+
+    &__copyright {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 1rem;
     }
   }
 }

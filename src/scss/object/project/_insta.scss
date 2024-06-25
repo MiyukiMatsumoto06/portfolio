@@ -1,5 +1,5 @@
 .p-insta {
-  margin-top: 27rem;
+  margin-top: 28rem;
 
   &__box {
     text-align: center;
@@ -45,6 +45,13 @@
       width: calc(50%);
       margin: 0;
       padding: 5px;
+
+      &:nth-of-type(5),
+      &:nth-of-type(6),
+      &:nth-of-type(7),
+      &:nth-of-type(8) {
+        display: none;
+      }
     }
   }
 }

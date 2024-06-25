@@ -24,4 +24,44 @@ $(() => {
     $(this).toggleClass('is-active')
     innerList.toggleClass('is-active')
   })
+
+  // スライドアップ
+  const checkScrollSlideUp = (scrollBottom) => {
+    const scrollSlideUp = $('._scrollSlideUp')
+
+    scrollSlideUp.each((index, element) => {
+      const isActive = $(element).offset().top < scrollBottom
+
+      if (isActive) {
+        $(element).addClass('_isActiveSlideUp')
+      } else {
+        $(element).removeClass('_isActiveSlideUp')
+      }
+    })
+  }
+
+  // フェードイン
+  const checkScrollFadeIn = (scrollBottom) => {
+    const scrollFadeIn = $('._scrollFadeIn')
+
+    scrollFadeIn.each((index, element) => {
+      const isActive = $(element).offset().top < scrollBottom
+
+      if (isActive) {
+        $(element).addClass('_isActiveFadeIn')
+      } else {
+        $(element).removeClass('_isActiveFadeIn')
+      }
+    })
+  }
+
+  // スクロール時の処理
+  $(window).scroll(() => {
+    const scrollTop = $(window).scrollTop()
+    const windowHeight = $(window).height()
+    const scrollBottom = scrollTop + windowHeight
+
+    checkScrollSlideUp(scrollBottom)
+    checkScrollFadeIn(scrollBottom)
+  })
 })

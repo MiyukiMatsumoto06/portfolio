@@ -6,36 +6,36 @@
   <div class="p-carousel">
     <ul class="p-carousel__list">
       <li class="p-carousel__item">
-        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC1.png" alt="" /> <img class="p-carousel__SP" src="assets/images/carousel_SP1.png" alt="" /></a>
+        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC1.png" alt="フェア" /> <img class="p-carousel__SP" src="assets/images/carousel_SP1.png" alt="フェア" /></a>
       </li>
       <li class="p-carousel__item">
-        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC2.png" alt="" /> <img class="p-carousel__SP" src="assets/images/carousel_SP2.png" alt="" /></a>
+        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC2.png" alt="リニューアルオープン" /> <img class="p-carousel__SP" src="assets/images/carousel_SP2.png" alt="リニューアルオープン" /></a>
       </li>
       <li class="p-carousel__item">
-        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC3.png" alt="" /> <img class="p-carousel__SP" src="assets/images/carousel_SP3.png" alt="" /></a>
+        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC3.png" alt="オンラインショップ" /> <img class="p-carousel__SP" src="assets/images/carousel_SP3.png" alt="オンラインショップ" /></a>
       </li>
       <li class="p-carousel__item">
-        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC4.png" alt="" /> <img class="p-carousel__SP" src="assets/images/carousel_SP4.png" alt="" /></a>
+        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC4.png" alt="モバイルオーダー" /> <img class="p-carousel__SP" src="assets/images/carousel_SP4.png" alt="モバイルオーダー" /></a>
       </li>
       <li class="p-carousel__item">
-        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC5.png" alt="" /> <img class="p-carousel__SP" src="assets/images/carousel_SP5.png" alt="" /></a>
+        <a href="#"><img class="p-carousel__PC" src="assets/images/carousel_PC5.png" alt="プライベートシート" /> <img class="p-carousel__SP" src="assets/images/carousel_SP5.png" alt="プライベートシート" /></a>
       </li>
     </ul>
   </div>
 
   <!-- 店舗イメージ -->
-  <div class="p-image">
-    <img class="p-image__PC" src="assets/images/image_PC.png" alt="" />
-    <img class="p-image__SP" src="assets/images/image_SP.png" alt="" />
+  <div class="p-image _scrollSlideUp _scrollFadeIn">
+    <img class="p-image__PC" src="assets/images/image_PC.png" alt="内装・外観" />
+    <img class="p-image__SP" src="assets/images/image_SP.png" alt="内装・外観" />
   </div>
 
   <!-- 店舗詳細 -->
-  <section class="p-description">
+  <section class="p-description _scrollSlideUp _scrollFadeIn">
     <h1 class="p-description__title">
       <span class="p-description__underline">韓国トレンドを楽しめる<br class="p-description__SP" />スイーツエンタメパーク</span>
     </h1>
     <div class="p-description__logo">
-      <img src="assets/images/logo_3.png" alt="" />
+      <img src="assets/images/logo_3.png" alt="ロゴ" />
     </div>
     <p class="p-description__text">
       日本初出店を含む韓国人気の<br />カフェ&スイーツショップ・グッズなど<br class="p-description__SP" />9店舗が登場し、<br />
@@ -46,8 +46,8 @@
   <!-- ショップリスト -->
   <section class="p-shoplist">
     <div class="p-inner">
-      <h2 class="c-title">Shop List</h2>
-      <p class="c-subTitle">店舗紹介</p>
+      <h2 class="c-title _scrollSlideUp _scrollFadeIn">Shop List</h2>
+      <p class="c-subTitle _scrollSlideUp _scrollFadeIn">店舗紹介</p>
 
       <div class="p-shoplist__content">
         <ul class="p-shoplist__list"></ul>
@@ -86,10 +86,13 @@
         data.forEach((item) => {
           const shopItem = document.createElement('li')
           shopItem.className = 'p-shoplist__item'
+          shopItem.classList.add('new-class-name')
+          shopItem.classList.add('_scrollSlideUp')
+          shopItem.classList.add('_scrollFadeIn')
 
           shopItem.innerHTML = `
           <div class="p-shop__img">
-            <a href="#"><img src="${item.shopImg}" alt="" /></a>
+            <a href="#"><img src="${item.shopImg}" alt="${item.shopName}" /></a>
           </div>
           <div class="p-shoplist__area">
             <div class="p-shoplist__box">
@@ -97,7 +100,7 @@
               <p class="p-shoplist__sub">${item.shopSub}</p>
             </div>
             <div class="p-shoplist__arrow">
-              <a href="#"><img src="assets/images/shop_arrow.png" alt="" /></a>
+              <a href="#"><img src="assets/images/shop_arrow.png" alt="ショップページ" /></a>
             </div>
           </div>
               <p class="p-shoplist__text">${item.shopText}</p>
@@ -112,11 +115,11 @@
   <!-- パークマップ -->
   <section class="p-parkmap">
     <div class="p-inner">
-      <h2 class="c-title">Park Map</h2>
-      <p class="c-subTitle">パークマップ</p>
+      <h2 class="c-title _scrollSlideUp _scrollFadeIn">Park Map</h2>
+      <p class="c-subTitle _scrollSlideUp _scrollFadeIn">パークマップ</p>
 
-      <div class="p-parkmap__box">
-        <img class="p-parkmap__img" src="assets/images/parkmap.png" alt="" />
+      <div class="p-parkmap__box _scrollSlideUp _scrollFadeIn">
+        <img class="p-parkmap__img" src="assets/images/parkmap.png" alt="パークマップ" />
         <p class="p-parkmap__list">
           <span class="p-parkmap__item">ショップ</span>
           <span class="p-parkmap__item">プライベートシート</span>
@@ -130,10 +133,10 @@
   <!-- インスタグラム -->
   <section class="p-insta">
     <div class="p-inner">
-      <h2 class="c-title">Instagram</h2>
-      <p class="c-subTitle">インスタグラム</p>
+      <h2 class="c-title _scrollSlideUp _scrollFadeIn">Instagram</h2>
+      <p class="c-subTitle _scrollSlideUp _scrollFadeIn">インスタグラム</p>
       <div class="p-insta__box">
-        <ul class="p-insta__list"></ul>
+        <ul class="p-insta__list _scrollSlideUp _scrollFadeIn"></ul>
       </div>
 
       <script>
@@ -147,7 +150,7 @@
 
           instaItem.innerHTML = `
           <div class="p-insta__img">
-            <a href="#"><img src="${item}" alt="" /></a>
+            <a href="#"><img src="${item}" alt="Instagram" /></a>
           </div>
 
           `
@@ -161,16 +164,16 @@
   <!-- アクセス -->
   <section class="p-access">
     <div class="p-inner">
-      <h2 class="c-title">Access</h2>
-      <p class="c-subTitle">アクセス</p>
+      <h2 class="c-title _scrollSlideUp _scrollFadeIn">Access</h2>
+      <p class="c-subTitle _scrollSlideUp _scrollFadeIn">アクセス</p>
       <div class="p-access__box">
-        <div class="p-access__map">
-          <img class="p-access__PC" src="assets/images/map_1.png" alt="" />
-          <img class="p-access__SP" src="assets/images/map_2.png" alt="" />
+        <div class="p-access__map _scrollSlideUp _scrollFadeIn">
+          <img class="p-access__PC" src="assets/images/map_1.png" alt="アクセスマップ" />
+          <img class="p-access__SP" src="assets/images/map_2.png" alt="アクセスマップ" />
         </div>
         <button class="c-btn" onclick="location.href='#'">Googleマップで見る</button>
         <div class="p-access__video">
-          <a href="#"><img src="assets/images/video.png" alt="" /></a>
+          <a href="#"><img src="assets/images/video.png" alt="YouTube" /></a>
         </div>
       </div>
     </div>
