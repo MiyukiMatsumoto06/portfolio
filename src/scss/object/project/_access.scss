@@ -1,5 +1,5 @@
 .p-access {
-  margin-top: 28rem;
+  margin-top: 16.5rem;
 
   &__box {
     width: 80%;
@@ -7,7 +7,7 @@
   }
 
   &__map {
-    mb: 8rem;
+    margin-bottom: 8rem;
   }
 
   &__PC {
@@ -31,12 +31,12 @@
 // SP表示　768px以下
 @media screen and (max-width: 768px) {
   .p-access {
-    margin-top: 10rem;
+    margin-top: 8.5rem;
 
     &__box {
       max-width: none;
       width: auto;
-      margin-top: 4rem;
+      margin-top: 3.5rem;
     }
 
     &__PC {
@@ -45,6 +45,14 @@
 
     &__SP {
       display: block;
+    }
+
+    &__map {
+      margin-bottom: 0;
+    }
+
+    &__video {
+      margin-top: 5.5rem;
     }
   }
 }

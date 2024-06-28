@@ -1,10 +1,9 @@
 .p-insta {
-  margin-top: 28rem;
+  margin-top: 16.5rem;
 
   &__box {
     text-align: center;
     margin: 7rem auto 0;
-    padding-bottom: 10px;
   }
 
   &__list {
@@ -31,10 +30,10 @@
 // SP表示　768px以下
 @media screen and (max-width: 768px) {
   .p-insta {
-    margin-top: 10rem;
+    margin-top: 8.5rem;
 
     &__box {
-      margin-top: 4rem;
+      margin-top: 2.5rem;
     }
 
     &__list {
