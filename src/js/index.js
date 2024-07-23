@@ -25,6 +25,13 @@ $(() => {
     innerList.toggleClass('is-active')
   })
 
+  // メニューリンク
+  const navLink = $('.p-nav__link')
+  navLink.click(function () {
+    $(this).toggleClass('is-active')
+    nav.toggleClass('is-active')
+  })
+
   // スライドアップ
   const checkScrollSlideUp = (scrollBottom) => {
     const scrollSlideUp = $('._scrollSlideUp')
