@@ -29,6 +29,7 @@ $(() => {
   const navLink = $('.p-nav__link')
   navLink.click(function () {
     $(this).toggleClass('is-active')
+    menuBtn.toggleClass('is-active')
     nav.toggleClass('is-active')
   })
 
